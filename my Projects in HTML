@@ -1,1 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    background:linear-gradient(to top, rgb(0, 0, 0,0.5)50%,rgb(0, 0, 0,0.5)50%),url(sunrice.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 631px;
+    
+}
+.pavers{
+    font-size: 25px;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    max-width: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: orangered;
+    font-size: 30px;
+    font-family:serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 20px;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+a:hover{
+    color: red;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orangered;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: orangered;
+    border: 2px solid orangered;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.brn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.content{ 
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    
+   
+}
+.para{
+    text-indent: 60px;
+    text-align: justify;
+}
+.content .para{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-left: 100px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4 ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .4s ease;
+}
+.cn:hover{
+    background-color: #fff;
+}
+.content span{
+    color: orangered;
+    font-size: 65px;
+}
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0,0.8)50%,rgba(0, 0, 0,0.8)50%);
+    position:absolute;
+    top: 130px;
+    left: 800px;
+    border-radius: 10px;
+    padding: 25px;
 
+}
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orangered;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 10px solid orangered;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.btnn{
+    width: 240;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-top: 30px;
+    font-style: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+
+}
+.btnn:hover{
+    background-color: #fff;
+    color: orangered;
+}
+.btnn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form,.link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: 17px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.link:hover{
+    color: orangered;
+}
+.link{
+    color: blue;
+    cursor: pointer;
+}
+.liw{
+    color: blue;
+}
+.liw:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.form, .link a{
+    text-decoration: none;
+    color: orangered;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons:hover{
+    color: #ff7200;
+}
+.suh{
+    color: orangered;
+    text-decoration: none;
+}
+.suh:hover{
+    color: darkorchid;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">VMGR <sub>Pavers</sub> </h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Design</a></li>
+                    <li> <a href="#">Service</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type Text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+            <div class="content">
+                <h1><br><br><span> About Us</span></h1>
+                <p class="para"> Pavers has set a benchmarking quality standard and pattern collection<br>  range in all over India market.Our state-of-the-art manufacturing process shaped <br>us to be the town's leading Interlock Paver Block Manufacturer.Since 2015, our<br> pavement blocks have rooted their aesthetically fabricated blocks in the <br> industrial and residential floors. We established our manufacturing facility <br> at Salavakkam,Kanchipuram District, Tamilnadu</p>
+                <button class="cn">Join us</button>
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Address">
+                    <input type="password" name="" placeholder="Enter Your password">
+                    <button class="btnn"> <a href="#">Login</a></button><br>
+                    <a class="link"> Don't have an Acoount</a><br>
+                    <a href="suh"> Sign up here <p> Here</p></a><br>
+                    <a class="liw"> login in with </a>
+
+                    
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
